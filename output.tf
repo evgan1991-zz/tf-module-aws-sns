@@ -13,11 +13,6 @@ output "subscription_id" {
   description = "The ARN of the subscription"
 }
 
-output "subscription_topic_arn" {
-  value       = "${aws_sns_topic_subscription.this.0.topic_arn}"
-  description = "The ARN of the topic the subscription belongs to"
-}
-
 output "subscription_protocol" {
   value       = "${aws_sns_topic_subscription.this.0.protocol}"
   description = "The protocol being used"

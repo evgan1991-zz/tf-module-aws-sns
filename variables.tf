@@ -20,12 +20,6 @@ variable "name" {
   default     = ""
 }
 
-variable "name_prefix" {
-  description = "The friendly name for the SNS topic. Conflicts with name."
-  type        = "string"
-  default     = ""
-}
-
 variable "display_name" {
   description = "The display name for the SNS topic"
   type        = "string"

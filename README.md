@@ -1,9 +1,9 @@
-# Summary
+# Description
 
 Module for creating Simple Notification Service.
 Can automatically create subscriptions of the following types: sqs, sms, lambda, application (http or https are partially supported, email is NOT SUPPORTED).
 
-## Usage example
+## Usage
 
 ```hcl
 module "sns" {
@@ -40,7 +40,6 @@ module "sns" {
 | sqs_success_feedback_role_arn | The IAM role permitted to receive success feedback for this topic | "string" | "" | no |
 | sqs_success_feedback_sample_rate | Percentage of success to sample | | 100 | no |
 | sqs_failure_feedback_role_arn | IAM role for failure feedback | "string" | "" | no |
-| variables for subscriptions |
 | topic_subscription | protocol and endpoint for topic subscription. The protocol to use. The possible values for this are: sqs, sms, lambda, application. (http or https are partially supported) (email is option but unsupported). The endpoint to send data to, the contents will vary with the protocol. | "map" | { protocol = "" endpoint = "" } | no |
 | endpoint_auto_confirms | Indicating whether the end point is capable of auto confirming subscription e.g., PagerDuty (default is false) | "string" | "false" | no |
 | confirmation_timeout_in_minutes | Indicating number of minutes to wait in retying mode for fetching subscription arn before marking it as failure. Only applicable for http and https protocols | | 1 | no |
