@@ -1,4 +1,4 @@
-# Description
+## Description
 
 Module for creating Simple Notification Service.
 Can automatically create subscriptions of the following types: sqs, sms, lambda, application (http or https are partially supported, email is NOT SUPPORTED).
@@ -54,13 +54,18 @@ module "sns" {
 | id | The ARN of the aws sns topic |
 | arn | The ARN of the aws sns topic |
 | subscription_id | The ARN of the subscription |
-| subscription_topic_arn | The ARN of the topic the subscription belongs to |
 | subscription_protocol | The protocol being used |
-| subscription_endpoint | The full endpoint to send data to (SQS ARN, HTTP(S) URL, Application ARN, SMS number, etc.) |
+| subscription_endpoint | The full endpoint to send data to SQS ARN HTTP HTTPS URL Application ARN SMS number etc. |
 | subscription_arn | The ARN of the subscription stored as a more user-friendly property |
+
+
+
 
 ## Terraform versions
 Terraform v0.11.11
+
+## Contributing
+---
 
 ## License
 Apache
