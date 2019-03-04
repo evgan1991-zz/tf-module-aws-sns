@@ -52,8 +52,19 @@ module "sns" {
 
 | Name | Description |
 |------|-------------|
+| id | The ARN of the aws sns topic |
+| arn | The ARN of the aws sns topic |
 | subscription_id | The ARN of the subscription |
 | subscription_topic_arn | The ARN of the topic the subscription belongs to |
 | subscription_protocol | The protocol being used |
 | subscription_endpoint | The full endpoint to send data to (SQS ARN, HTTP(S) URL, Application ARN, SMS number, etc.) |
 | subscription_arn | The ARN of the subscription stored as a more user-friendly property |
+
+## Terraform versions
+Terraform v0.11.11
+
+## License
+Apache
+
+## Authors
+Lean Delivery Team team@lean-delivery.com

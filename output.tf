@@ -1,3 +1,13 @@
+output "id" {
+  value       = "${aws_sns_topic.this.id}"
+  description = "The ARN of the aws sns topic"
+}
+
+output "arn" {
+  value       = "${aws_sns_topic.this.arn}"
+  description = "The ARN of the aws sns topic"
+}
+
 output "subscription_id" {
   value       = "${aws_sns_topic_subscription.this.0.id}"
   description = "The ARN of the subscription"
